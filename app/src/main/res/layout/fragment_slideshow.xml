@@ -112,13 +112,18 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Edit Profile"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/green_rounded"
+            android:paddingTop="15dp"
+            android:textSize="15sp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
             android:textColor="#FFFFFF"
             />
     </RelativeLayout>
