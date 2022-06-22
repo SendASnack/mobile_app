@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.content.Intent;
 
 import com.example.sendasnack.data.viewmodel.OrderViewModel;
 import com.google.android.material.snackbar.Snackbar;
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+
+        String loggedIn = getIntent().getStringExtra("loggedIn");
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

@@ -10,18 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.sendasnack.databinding.FragmentGalleryBinding;
+import com.example.sendasnack.databinding.FragmentEarningBinding;
 
 public class EarningFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentEarningBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         EarningViewModel earningViewModel =
                 new ViewModelProvider(this).get(EarningViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentEarningBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textGallery;
