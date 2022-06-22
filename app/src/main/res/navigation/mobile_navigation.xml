@@ -28,4 +28,11 @@
         android:name="com.example.sendasnack.ui.earning.EarningFragment"
         android:label="My Earning"
         tools:layout="@layout/fragment_earning" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.sendasnack.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/login" />
+
 </navigation>

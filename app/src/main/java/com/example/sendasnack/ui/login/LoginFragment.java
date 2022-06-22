@@ -1,4 +1,4 @@
-package com.example.sendasnack.ui.slideshow;
+package com.example.sendasnack.ui.login;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,18 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.sendasnack.databinding.FragmentSlideshowBinding;
+import com.example.sendasnack.databinding.FragmentHomeBinding;
 
-public class SlideshowFragment extends Fragment {
+public class LoginFragment extends Fragment {
 
-    private FragmentSlideshowBinding binding;
+    private FragmentHomeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        LoginViewModel loginViewModel =
+                new ViewModelProvider(this).get(LoginViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         return root;
