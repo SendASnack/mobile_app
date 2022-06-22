@@ -1,12 +1,15 @@
 package com.example.sendasnack;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 
+import com.example.sendasnack.data.viewmodel.OrderViewModel;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.activity.result.ActivityResultLauncher;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -17,6 +20,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.sendasnack.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
+
+    // reference to to my (view)model
+    private OrderViewModel mOrderViewModel;
+
+    private ActivityResultLauncher<Intent> startContactActivityLaucher;
+
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
