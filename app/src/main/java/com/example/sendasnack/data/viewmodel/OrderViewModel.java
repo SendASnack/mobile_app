@@ -2,6 +2,7 @@ package com.example.sendasnack.data.viewmodel;
 
 import android.app.Application;
 
+import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
@@ -34,6 +35,10 @@ public class OrderViewModel extends AndroidViewModel {
     }
 
     public LiveData<List<Order>> getAllContacts() { return mAllContacts; }
+
+    public boolean contains(@NonNull Order order){
+        return mRepository.contains(order);
+    }
 
     public void insert(Order order) {
         // send the new Contact into the database using the Repository abstraction

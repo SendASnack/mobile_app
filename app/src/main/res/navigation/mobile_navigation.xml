@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.sendasnack.ui.gallery.GalleryFragment"
+        android:name="com.example.sendasnack.ui.map.GalleryFragment"
         android:label="History"
         tools:layout="@layout/fragment_gallery" />
 

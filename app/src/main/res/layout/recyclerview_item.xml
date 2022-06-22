@@ -8,15 +8,6 @@
     android:padding="6dp">
 
     <TextView
-        android:id="@+id/tvOrder"
-        style="@style/text_view_style"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textStyle="bold"
-        tools:text="name" />
-
-    <TextView
         android:id="@+id/tvPickUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,6 +23,8 @@
 
     <TextView
         android:id="@+id/tvPrice"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -43,10 +36,33 @@
         android:layout_height="wrap_content"
         tools:listitem="@layout/listview_item" />
 
-    <Button
-        android:id="@+id/btSendEmail"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email now" />
-
+        android:layout_marginBottom="10dp"
+        >
+        <Button
+            android:id="@+id/pick_order_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="18.7dp"
+            android:layout_marginRight="62dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="Pick Order"
+            android:backgroundTint="#B9C558"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginBottom="20dp"/>
 </LinearLayout>

@@ -13,11 +13,14 @@ public class Order {
     // primary key would often be an auto-generated number; in this case, we are using the email
     @PrimaryKey
     @NonNull
-    @ColumnInfo(name = "email")
-    private String pickUp;
+    private String delivery;
 
     @NonNull
-    private String delivery;
+    private String pickUp;
+
+    private String pickUpCoords;
+
+    private String deliveryCoords;
 
     @NonNull
     private double price;
@@ -31,12 +34,30 @@ public class Order {
         this.products = products;
     }
 
+    public Order(){
+
+    }
+
+    public String getPickUpCoords(){
+        return pickUpCoords;
+    }
+    public void setPickUpCoords(String pickUpCoords){
+        this.pickUpCoords = pickUpCoords;
+    }
+
+    public String getDeliveryCoords(){
+        return deliveryCoords;
+    }
+    public void setDeliveryCoords(String deliveryCoords){
+        this.deliveryCoords = deliveryCoords;
+    }
+
     @NonNull
     public String getPickUp() {
         return pickUp;
     }
 
-    public void setPickUp(@NonNull String email) {
+    public void setPickUp(@NonNull String pickUp) {
         this.pickUp = pickUp;
     }
 

@@ -16,7 +16,7 @@ public interface OrderDAO {
     // you don't need to explicit the SQL to use the defaults for
     // @Insert, @Update, @Delete
 
-    @Insert ( onConflict = OnConflictStrategy.ABORT)
+    @Insert ( onConflict = OnConflictStrategy.REPLACE)
     void insert(Order order);
 
     @Query("DELETE FROM orders")

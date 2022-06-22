@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:text="Zé Manel"
+                android:text="Pedro Monteiro"
                 android:textColor="#fff"
                 android:textSize="23dp"
                 android:textStyle="bold" />
@@ -62,7 +62,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="pmapm123@gmail.com"
+                android:text="pedro@ua.pt"
                 android:textColor="#000"
                 android:textSize="18dp"
                 android:paddingLeft="15dp"
@@ -82,7 +82,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+351 969696969"
+                android:text="+351 961248563"
                 android:textColor="#000"
                 android:textSize="18dp"
                 android:paddingLeft="15dp"

@@ -26,6 +26,10 @@ public class Product {
         this.price = price;
     }
 
+    public Product(){
+
+    }
+
     @NonNull
     public String getDescription() {
         return description;

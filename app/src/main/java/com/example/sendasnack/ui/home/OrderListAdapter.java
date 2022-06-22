@@ -3,13 +3,10 @@ package com.example.sendasnack.ui.home;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -23,7 +20,6 @@ import java.util.List;
 import com.example.sendasnack.R;
 import com.example.sendasnack.data.model.Order;
 import com.example.sendasnack.data.model.Product;
-import com.example.sendasnack.databinding.RecyclerviewItemBinding;
 
 
 public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.OrderViewHolder> {
@@ -54,9 +50,9 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.Orde
 
         if (mOrders != null) {
             Order current = mOrders.get(position);
-            holder.tvDelivery.setText(current.getDelivery());
-            holder.tvPickUP.setText(current.getPickUp());
-            holder.tvPrice.setText(Double.toString(current.getPrice()));
+            holder.tvDelivery.setText("Delivery on: "+current.getDelivery());
+            holder.tvPickUP.setText("Pick up: "+ current.getPickUp());
+            holder.tvPrice.setText("Total price: " + Double.toString(current.getPrice()));
             List<Product> prods = new ArrayList<>();
             for (Product p : current.getProducts().getProducts()){
                 prods.add(p);
@@ -95,7 +91,6 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.Orde
         final TextView tvDelivery;
         final TextView tvPrice;
         final RecyclerView tvListView;
-        //final Button btMessage;
 
         // activity context
         //private final Context context;

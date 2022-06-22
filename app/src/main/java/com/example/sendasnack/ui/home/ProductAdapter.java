@@ -53,7 +53,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             Product current = mProducts.get(position);
             holder.desc.setText(current.getDescription());
             holder.name.setText(current.getName());
-            holder.price.setText(Double.toString(current.getPrice()));
+            holder.price.setText(Double.toString(current.getPrice()) + "€");
 
         } else {
             // Covers the case of data not being ready yet.
