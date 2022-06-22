@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "334950461750",
+    "project_id": "sendasnack-a9505",
+    "storage_bucket": "sendasnack-a9505.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334950461750:android:d71128b44aa95572af8397",
+        "android_client_info": {
+          "package_name": "com.example.sendasnack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334950461750-s1lb8hm61gt30un3ps641huin6l9g5b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR4qIDGZbNV1NgCQ4QVsExt0Y1fy_v3bc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334950461750-s1lb8hm61gt30un3ps641huin6l9g5b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
